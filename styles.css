@@ -1,0 +1,63 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+@keyframes waveAnimation {
+    0% {
+      color: #ff5733; /* Orange */
+    }
+    25% {
+      color: #ffa933; /* Lighter orange */
+    }
+    50% {
+      color: #ffd633; /* Yellow */
+    }
+    75% {
+      color: #ffa933; /* Lighter orange */
+    }
+    100% {
+      color: #ff5733; /* Back to the starting orange */
+    }
+  }
+
+h1{
+
+    animation: waveAnimation 6s infinite;
+}
+
+#submit-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 14px;
+    color: white;
+    border: 1px solid orange;
+    background-color: orange;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.remove-btn,
+.toggle-read-btn{
+    width: 70px;
+    height: 20px;
+    border-radius: 14px;
+    color: orange;
+    border: 1px solid orange;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    margin-top: 30px;
+    width: auto;
+  
+    
+}
+
+
+.remove-btn:hover,
+.toggle-read-btn:hover {
+    color: white;
+    background-color: orange;
+}
