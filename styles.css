@@ -5,19 +5,19 @@ body{
 
 @keyframes waveAnimation {
     0% {
-      color: #ff5733; /* Orange */
+      color: #ff5733; 
     }
     25% {
-      color: #ffa933; /* Lighter orange */
+      color: #ffa933; 
     }
     50% {
-      color: #ffd633; /* Yellow */
+      color: #ffd633; 
     }
     75% {
-      color: #ffa933; /* Lighter orange */
+      color: #ffa933;
     }
     100% {
-      color: #ff5733; /* Back to the starting orange */
+      color: #ff5733; 
     }
   }
 

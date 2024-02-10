@@ -47,7 +47,9 @@ function displayName () {
         // Elemente werden in HTML Dokument erstellt
         const bookElement = document.createElement("div")
         const removeButton = document.createElement("button")
+        removeButton.className = "remove-btn";
         const toggleReadButton = document.createElement ("button")
+        toggleReadButton.className = "toggle-read-btn";
 
         //remove Button wird mit als "Remove" benannt + funktion removeBook aufgerufen mit dem index i 
         removeButton.textContent = "Remove"
@@ -55,6 +57,8 @@ function displayName () {
 
         //der Schalter wird angezeigt mit wenn read === true, schalte um auf Unread vice versa
         toggleReadButton.textContent = myLibrary[i].read ? "Mark as Unread" : "Mark as Read"
+        toggleReadButton.style.backgroundColor = myLibrary[i].read ? "orange" : "white"
+        toggleReadButton.style.color = myLibrary[i].read ? "white" : "orange"
         toggleReadButton.addEventListener("click", ()=>toggleReadStatus(i))
 
 
@@ -83,3 +87,5 @@ const toggleReadStatus = (index) => {
     myLibrary[index].read = !myLibrary[index].read;
     displayName();
 };
+
+
